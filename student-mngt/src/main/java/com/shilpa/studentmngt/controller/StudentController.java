@@ -32,14 +32,12 @@ public class StudentController {
 		
 	}
 	
-	
 	@PostMapping("/api/v1/student")
 	public Student insertStudent(@RequestBody Student student) {
 		return studentService.insertStudent(student);
 	}
 	
-	
-	
+
 	@PutMapping("/api/v1/student/{id}")
 	public Student updateStudent(@RequestBody Student student, @PathVariable (value = "id" )long studentId) {
 		return (Student) studentService.updateStudent(studentId, student);
