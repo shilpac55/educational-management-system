@@ -1,20 +1,19 @@
-package com.shilpa.studentmngt.service;
+package com.shilpa.coursemngt.studentmngt.service;
 
 import java.util.List;
 
+import com.shilpa.coursemngt.studentmngt.repo.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.shilpa.studentmngt.ResourceNotFoundException;
-import com.shilpa.studentmngt.entity.Student;
-import com.shilpa.studentmngt.repo.StudentRepository;
+import com.shilpa.coursemngt.studentmngt.ResourceNotFoundException;
+import com.shilpa.coursemngt.studentmngt.entity.Student;
 
 @Service
 public class StudentService {
 	
 	@Autowired
 	private StudentRepository studentRepository;
-	
 
 	public List<Student> fetchAllStudent() {
 		return studentRepository.findAll();
