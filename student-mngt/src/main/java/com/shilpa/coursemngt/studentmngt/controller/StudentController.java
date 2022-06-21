@@ -1,9 +1,8 @@
-package com.shilpa.studentmngt.controller;
+package com.shilpa.coursemngt.studentmngt.controller;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,8 +11,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.shilpa.studentmngt.entity.Student;
-import com.shilpa.studentmngt.service.StudentService;
+import com.shilpa.coursemngt.studentmngt.entity.Student;
+import com.shilpa.coursemngt.studentmngt.service.StudentService;
 
 @RestController
 public class StudentController {

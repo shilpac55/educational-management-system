@@ -1,4 +1,4 @@
-package com.shilpa.studentmngt.entity;
+package com.shilpa.coursemngt.studentmngt.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -53,7 +53,5 @@ public class Student {
 	@OneToOne(cascade=CascadeType.ALL)
 	@JoinColumn(name="address_id", referencedColumnName = "address_id")
 	public Address address;
-
-	//public Course course;
 	
 }
